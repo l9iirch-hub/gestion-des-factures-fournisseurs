@@ -9,25 +9,35 @@ Gestion des factures avec suivi des statuts
 Gestion des paiements partiels et complets
 Statistiques des dépenses
 Authentification sécurisée avec JWT
-🧱 Technologies utilisées
+
+
+
+ Technologies utilisées
+
 Node.js / Express (ou Laravel selon ton choix)
 JWT Authentication
 MySQL / MongoDB
 PlantUML (pour les diagrammes)
-📐 UML Diagrams
-🔷 1. Use Case Diagram
-@startuml
-actor Client
-actor Admin
 
-Client --> (Register)
-Client --> (Login)
-Client --> (Gérer fournisseurs)
-Client --> (Créer facture)
-Client --> (Effectuer paiement)
-Client --> (Voir statistiques)
 
-Admin --> (Voir tous les clients)
-Admin --> (Voir toutes les factures)
-Admin --> (Monitoring système)
-@enduml
+
+ UML Diagrams
+##  Use Case Diagram
+
+Voici le diagramme de cas d'utilisation du système :
+
+![Use Case Diagram](./img/useCase.png)
+
+---
+
+##  Class Diagram
+
+Voici le diagramme de classes :
+
+![Class Diagram](./img/class.png)
+
+##  Sueqence Diagram
+
+Voici le diagramme de Sueqence :
+
+![Sueqence Diagram](./img/sequence.png)
