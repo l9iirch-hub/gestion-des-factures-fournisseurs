@@ -23,7 +23,6 @@ app.use('/api/invoices', paymentRoutes);
 app.use('/api', analyticsRoutes);
 app.use('/api/admin', adminRoutes);
 
-// Route 404 - CORRIGÉE
 app.use((req, res) => {
   res.status(404).json({ message: 'Route non trouvée' });
 });
