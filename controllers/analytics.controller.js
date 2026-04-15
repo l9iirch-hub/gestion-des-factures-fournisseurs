@@ -32,7 +32,7 @@ const getSupplierStats = async (req, res) => {
   for (const invoice of invoices) {
     const invoicePayments = payments.filter(
       (p) => p.invoiceId.toString() === invoice._id.toString(),
-    );
+    );  
     const paidAmount = invoicePayments.reduce((sum, p) => sum + p.amount, 0);
 
     let status = "unpaid";
