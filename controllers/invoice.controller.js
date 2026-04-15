@@ -135,7 +135,15 @@ const deleteInvoice = async (req, res) => {
 
   await invoice.deleteOne();
   res.json({ message: "Facture supprimée" });
-};
+}
+
+const featureSearch = async (req, res) => {
+   const { status } = req.query;
+const invoices = await Invoice.status.find(query)
+    .populate("unpaid", "paid")
+  if (status) query.status = status;
+  
+}
 
 module.exports = {
   createInvoice,
